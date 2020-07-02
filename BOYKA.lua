@@ -751,6 +751,10 @@ local keyboard = {
 {'جلب نسخه الاحتياطيه ⌯'},
 {'تحديث السورس ⌯','الاصدار ⌯'},
 {'معلومات السيرفر ⌯'},
+{'اوامر تحويل السورس (اخطر )'},
+{'تحويل للسورس بويكا','تحويل للسورس ماركوس'},
+{'تحويل للسورس عالمي','تحويل للسورس كلاكسي'},
+{'مطور التحويل @hu4_yaB'},
 {'الغاء ⌯'}
 }
 send_inline_key(msg.chat_id_,bl,keyboard)
@@ -918,10 +922,33 @@ end
 
 if text == 'تحديث السورس ⌯' and SudoBot(msg) then 
 os.execute('rm -rf BOYKA.lua')
-os.execute('wget https://raw.githubusercontent.com/BOYKATEAM/BOYKA/master/BOYKA.lua')
+os.execute('wget https://wget https://raw.githubusercontent.com/CowleyIQ/BOYKAY/master/BOYKA.lua')
 send(msg.chat_id_, msg.id_,'⌯︙تم تحديث السورس \n⌯︙لديك اخر اصدار لسورس بويكا\n⌯︙الاصدار ← { 1.2v}')
 dofile('BOYKA.lua')  
 end
+if text == 'تحويل للسورس كلاكسي' and SudoBot(msg) then 
+os.execute('rm -rf GALAXY.lua')
+os.execute('wget https://raw.githubusercontent.com/CowleyIQ/GALAXYY/master/GALAXY.lua')
+send(msg.chat_id_, msg.id_,'تحويل للسورس كلاكسي') 
+dofile('GALAXY.lua')  
+end
+if text == 'تحويل للسورس ماركوس' and SudoBot(msg) then 
+os.execute('rm -rf BOYKA.lua')
+os.execute('wget https://raw.githubusercontent.com/CowleyIQ/MARCOSBOT/master/BOYKA.lua')
+send(msg.chat_id_, msg.id_,'تحويل للسورس ماركوس') 
+dofile('BOYKA.lua')  
+end
+if text == 'تحويل للسورس عالمي' and SudoBot(msg) then 
+os.execute('rm -rf GLOBLA.lua')
+os.execute('wget https://raw.githubusercontent.com/CowleyIQ/GLOBLA/master/GLOBLA.lua')
+send(msg.chat_id_, msg.id_,'تحويل للسورس عالمي') 
+dofile('GLOBLA.lua')  
+end
+if text == 'تحويل للسورس وطن' and SudoBot(msg) then 
+os.execute('rm -rf BOYKA.lua')
+os.execute('wget https://raw.githubusercontent.com/CowleyIQ/homelandBOT‏/master/BOYKA.lua')
+send(msg.chat_id_, msg.id_,'تحويل للسورس وطن') 
+dofile('BOYKA.lua')  
 if text == 'الاصدار ⌯' and SudoBot(msg) then 
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,'⌯︙اصدار سورس بويكا \n⌯︙الاصدار ←{ 1.2v}')
@@ -2163,7 +2190,7 @@ end
 return false
 end
 os.execute('rm -rf BOYKA.lua')
-os.execute('wget https://raw.githubusercontent.com/BOYKATEAM/BOYKA/master/BOYKA.lua')
+os.execute('wget https://wget https://raw.githubusercontent.com/CowleyIQ/BOYKAY/master/BOYKA.lua')
 send(msg.chat_id_, msg.id_,'⌯︙تم تحديث البوت \n⌯︙لديك اخر اصدار سورس بويكا\n⌯︙الاصدار ← { 1.2v}')
 dofile('BOYKA.lua')  
 end
